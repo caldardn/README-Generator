@@ -37,16 +37,17 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.description}
-  ${renderLicenseBadge(data.license)}
+  \n${renderLicenseBadge(data.license)}
 
   
   ## Table of Contents (Optional)
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
+  - [Contribution](#contribution)
   - [License](#license)
   - [Tests](#tests)
+  - [Questions](#questions)
   
   ## Installation 
   ${data.installation}

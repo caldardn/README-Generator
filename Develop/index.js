@@ -110,6 +110,7 @@ function init() {
     inquirer.prompt(questions)
     .then((data) =>
     {
+    
         writeToFile('README-generated.md',data)
     }
     );
