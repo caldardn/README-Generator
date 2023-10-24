@@ -14,6 +14,38 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## Description
+  ${data.description}
+  
+  ## Table of Contents (Optional)
+  
+  If your README is long, add a table of contents to make it easy for users to find what they need.
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Tests](#tests)
+  
+  ## Installation 
+  ${data.installation}
+
+  ## Usage 
+  ${data.usage}
+
+  ## License 
+  The license is:${data.license}
+
+  ## Contribution 
+  ${data.contribution}
+
+  ## Tests 
+  Use ${data.test} to run tests
+  
+  ## Questions 
+  * For any other questions about the application please contact me by emailing: ${data.email}
+  * To see other applications developed by me please visit my GitHub profile: [${data.github}](https://github.com/${data.github}/)
+
 `;
 }
 
