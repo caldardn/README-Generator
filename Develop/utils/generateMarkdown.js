@@ -1,18 +1,21 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
+
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== None) {
-    return `[Static Badge](https://img.shields.io/badge/${license}-content)`;
+  if (license !== "None") {
+    return `![Github license](https://img.shields.io/badge/${license}-content?color=blue)`;
+    
   } else {
     return "";
   }
 }
 
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `https://img.shields.io/badge/License-${license}-blue.svg`;
+    return `[${license} License](https://choosealicense.com/licenses/${license}/)`;
   } else {
     return "";
   }
@@ -22,7 +25,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `\n\n## License\n\nThis application uses the ${license} License.`;
+    return `${license}`;
   } else {
     return "";
   }
@@ -34,10 +37,10 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.description}
+  ${renderLicenseBadge(data.license)}
+
   
   ## Table of Contents (Optional)
-  
-  If your README is long, add a table of contents to make it easy for users to find what they need.
   
   - [Installation](#installation)
   - [Usage](#usage)
@@ -52,8 +55,8 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License 
-  The license is: ${renderLicenseSection(data.license)}
-  This is the link: ${renderLicenseLink(data.license)}
+  * The license is: ${renderLicenseSection(data.license)}
+  * This is the link: ${renderLicenseLink(data.license)}
 
   ## Contribution 
   ${data.contribution}

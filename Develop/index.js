@@ -9,7 +9,7 @@ const questions = [
     type: "input",
     message: "What is the title of your project?",
     name: "title",
-    default: "title",
+    default: "Title",
   },
   {
     type: "input",
@@ -101,7 +101,7 @@ const questions = [
 
   // TODO: Create a function to write README file
   function writeToFile(fileName, data) {
-    stat.writeFile(fileName,generateMarkdown(data),(err)=>
+    fs.writeFile(fileName,generateMarkdown(data),(err)=>
     err ? console.error(err) :console.log ('README created'))
   };
 
