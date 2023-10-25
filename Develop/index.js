@@ -99,11 +99,7 @@ const questions = [
   },
 ];
 
-  // TODO: Create a function to write README file
-  function writeToFile(fileName, data) {
-    fs.writeFile(fileName,generateMarkdown(data),(err)=>
-    err ? console.error(err) :console.log ('README created'))
-  };
+
 
 // TODO: Create a function to initialize app
 function init() {
@@ -111,7 +107,8 @@ function init() {
     .then((data) =>
     {
     
-        writeToFile('README-generated.md',data)
+      fs.writeFile('README-generated.md',generateMarkdown(data),(err)=>
+      err ? console.error(err) :console.log ('README created'))
     }
     );
 }

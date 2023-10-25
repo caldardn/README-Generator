@@ -4,7 +4,6 @@
 function renderLicenseBadge(license) {
   if (license !== "None") {
     return `![Github license](https://img.shields.io/badge/${license}-content?color=blue)`;
-    
   } else {
     return "";
   }
