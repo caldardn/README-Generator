@@ -15,10 +15,10 @@ The default answer is the writing in parentheses after the question, and it can 
 
 ## Video
 <a href="https://drive.google.com/file/d/1FcFvgBx8gh3G4hTktZEGuh-POYba6zLH/view?usp=drive_link">Video Walkthrough</a>
-## Contact Information
 
 ## Contact Information
 <a href="https://github.com/caldardn/README-Generator">Github Repo</a>
+
 [Contact me](caldardn@gmail.com)
 
 
