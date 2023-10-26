@@ -8,7 +8,7 @@ This application will require you to have <a href="https://nodejs.org/en">Node.j
 
 ## Usage
 To run this application type into your command line "node index" and the application will ask you question on what you would like to add to your README.
-<img src="./Develop/assets/img/Screenshot.png" alt="Image of the application after completion">
+<img src="./assets/img/Screenshot.png" alt="Image of the application after completion">
 
 ## Default Answer
 The default answer is the writing in parentheses after the question, and it can be selected by the user by just clicking enter. If the user wishes to have a different selection they can write what they want to have instead.
